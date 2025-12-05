@@ -15,9 +15,9 @@ load_dotenv()
 app = Flask(__name__, static_folder="client/build")
 # Use exact origins (no trailing slash). Add your Vercel URL here.
 CORS(app, origins=[
-    "https://assesment-client-ar46yoogw-shreyash-gupta-s-projects.vercel.app",
-    "http://localhost:3000"
-])
+    "https://assesment-client.vercel.app",
+    "https://assesment-client-shreyashgupta-9970-shreyash-gupta-s-projects.vercel.app",
+    "http://localhost:3000"])
 
 DATA_FILE = "submissions.json"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
