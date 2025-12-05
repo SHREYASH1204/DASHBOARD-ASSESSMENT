@@ -16,6 +16,7 @@ app = Flask(__name__, static_folder="client/build")
 # Use exact origins (no trailing slash). Add your Vercel URL here.
 CORS(app, origins=[
     "https://assesment-client.vercel.app",
+    "https://dashboard-admin.vercel.app",
     "https://assesment-client-shreyashgupta-9970-shreyash-gupta-s-projects.vercel.app",
     "https://assesment-client-8x0dae56f-shreyash-gupta-s-projects.vercel.app/",
     "http://localhost:3000"])
