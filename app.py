@@ -8,12 +8,37 @@ from dotenv import load_dotenv
 import requests
 
 app = Flask(__name__ , static_folder="client/build")
-CORS(app, origins=["https://assesment-client-ar46yoogw-shreyash-gupta-s-projects.vercel.app/", "http://localhost:3000"])
+CORS(app, origins=[
+    "https://assesment-client-ar46yoogw-shreyash-gupta-s-projects.vercel.app",
+    "http://localhost:3000"
+])
 load_dotenv()
 
 DATA_FILE = "submissions.json"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY
+
+@app.before_request
+def log_request_info():
+    # Print method & path to the server logs so Render shows it
+    print(f"[REQUEST] {request.method} {request.path}", file=sys.stdout, flush=True)
+
+@app.route("/", methods=["GET"])
+def index():
+    # Simple JSON so root never 404
+    return jsonify({"status":"running", "message":"Feedback API. Use /submit_review, /submissions, /health"}), 200
+
+@app.route("/favicon.ico")
+def favicon():
+    return "", 204
+
+@app.route("/health")
+def health():
+    return jsonify({"status":"ok"}), 200
+
+@app.route("/")
+def index():
+    return jsonify({"status":"running", "message":"Feedback API. Use /submit"}), 200
 
 def load_data():
     if not os.path.exists(DATA_FILE):
