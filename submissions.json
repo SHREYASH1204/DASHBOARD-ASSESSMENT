@@ -1,0 +1,66 @@
+[
+  {
+    "rating": 4,
+    "review": "The food was really tasty and the ambience was great, but the service was a bit slow. We waited almost 20 minutes before someone took our order. Still, once the food arrived it was worth the wait, and the staff were polite.",
+    "timestamp": "2025-12-05T12:54:41.384996",
+    "user_reply": "Thank you for your 4-star review! We appreciate your feedback: \"The food was really tasty and the ambience was great, but th...\"",
+    "ai_summary": null,
+    "ai_actions": null
+  },
+  {
+    "rating": 3,
+    "review": "def call_llm_admin_summary(review):\n    return {\n        \"summary\": f\"Summary: {review[:50]}...\",\n        \"recommended_actions\": \"Monitor feedback for trends.\"  # Replace as needed\n    }",
+    "timestamp": "2025-12-05T12:57:44.055332",
+    "user_reply": "Thank you for your 3-star review! We appreciate your feedback: \"def call_llm_admin_summary(review):\n    return {\n        \"su...\"",
+    "ai_summary": "Summary: def call_llm_admin_summary(review):\n    return {\n ...",
+    "ai_actions": "Monitor feedback for trends."
+  },
+  {
+    "rating": 4,
+    "review": "The food was really tasty and the ambience was great, but the service was a bit slow. We waited almost 20 minutes before someone took our order. Still, once the food arrived it was worth the wait, and the staff were polite.",
+    "timestamp": "2025-12-05T13:03:30.068578",
+    "user_reply": "Thank you for your review!",
+    "ai_summary": "",
+    "ai_actions": ""
+  },
+  {
+    "rating": 5,
+    "review": "The food was really tasty and the ambience was great, but the service was a bit slow. We waited almost 20 minutes before someone took our order. Still, once the food arrived it was worth the wait, and the staff were polite.",
+    "timestamp": "2025-12-05T13:06:41.938403",
+    "user_reply": "Thank you for your review!",
+    "ai_summary": "",
+    "ai_actions": ""
+  },
+  {
+    "rating": 5,
+    "review": "The food was really tasty and the ambience was great, but the service was a bit slow. We waited almost 20 minutes before someone took our order. Still, once the food arrived it was worth the wait, and the staff were polite.",
+    "timestamp": "2025-12-05T13:08:17.142853",
+    "user_reply": "Thank you for your review!",
+    "ai_summary": "The customer thoroughly enjoyed the tasty food, great ambiance, and polite staff, but experienced a significant delay in initial service before their order was taken.",
+    "ai_actions": "Address the initial service bottleneck by training staff to promptly acknowledge and take orders, especially during busy periods."
+  },
+  {
+    "rating": 3,
+    "review": "The pasta was flavorful and well-cooked, but we had to wait too long for our drinks. Overall enjoyable but needs faster service",
+    "timestamp": "2025-12-05T13:14:21.638822",
+    "user_reply": "Thank you for your feedback! We're delighted to hear you enjoyed the flavorful and well-cooked pasta. We sincerely apologize for the delay you experienced with your drinks and for the service not meeting your expectations. We are actively working on improving our speed and efficiency. We hope to serve you better in the future!",
+    "ai_summary": "The customer praised the pasta quality but highlighted slow drink service, suggesting an overall need for faster service despite an enjoyable experience.",
+    "ai_actions": "Focus on improving drink service efficiency to reduce customer wait times."
+  },
+  {
+    "rating": 4,
+    "review": "I visited this place for dinner with friends. The atmosphere was cozy and pleasant, and the staff was welcoming. However, the wait time for our order was longer than expected. The food tasted excellent once it arrived, especially the grilled chicken. Overall, it\u2019s a good restaurant but needs improvement in service efficiency",
+    "timestamp": "2025-12-05T13:28:13.327145",
+    "user_reply": "Thank you for your feedback! We're delighted to hear you enjoyed our cozy atmosphere, found our staff welcoming, and especially loved the excellent taste of your food, particularly the grilled chicken.\n\nWe sincerely apologize for the longer wait time you experienced for your order. We understand your concern regarding service efficiency and are actively working to improve this aspect to ensure a smoother experience for all our guests.\n\nWe hope to serve you better in the future!",
+    "ai_summary": "The customer praised the cozy atmosphere, welcoming staff, and excellent food (especially the grilled chicken), but noted significant wait times for orders, indicating a need for improved service efficiency.",
+    "ai_actions": "Investigate and streamline kitchen and service processes to reduce food delivery wait times and enhance overall service efficiency."
+  },
+  {
+    "rating": 5,
+    "review": "The caf\u00e9 has a beautiful interior and a peaceful vibe. I ordered a cappuccino and a sandwich. The sandwich was fresh and flavorful, but the coffee tasted burnt. The staff apologized politely, which I appreciated. With a little consistency, this could become one of my favorite spots.",
+    "timestamp": "2025-12-05T14:04:53.902642",
+    "user_reply": "Thank you for your fantastic review and for highlighting our beautiful interior, peaceful vibe, and delicious, fresh sandwich! We're delighted to hear you appreciated our staff's polite apology regarding the cappuccino. We sincerely apologize that the coffee tasted burnt; we're actively working on our consistency to ensure every drink meets our high standards. We hope to serve you better in the future!",
+    "ai_summary": "The customer enjoyed the caf\u00e9's ambiance, fresh sandwich, and polite staff, but experienced burnt-tasting coffee and emphasized a need for greater consistency.",
+    "ai_actions": "Implement barista training and robust quality control specifically for coffee preparation to ensure consistent, high-quality beverages."
+  }
+]
