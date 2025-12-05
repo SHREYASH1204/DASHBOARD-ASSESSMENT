@@ -7,8 +7,8 @@ from datetime import datetime
 from dotenv import load_dotenv
 import requests
 
-app = Flask(__name__)
-CORS(app)
+app = Flask(__name__ , static_folder="client/build")
+CORS(app, origins=["https://assesment-client-ar46yoogw-shreyash-gupta-s-projects.vercel.app/", "http://localhost:3000"])
 load_dotenv()
 
 DATA_FILE = "submissions.json"
